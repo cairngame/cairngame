@@ -20,6 +20,16 @@ body {
   border: none;
 
 }
+nav{
+
+}
+.nav a{
+    color: white !important;
+    font-size: 1.8em !important;
+    }
+.nav li{
+    padding-right:5px;
+   }
 
 .buttonpadding {
   padding-bottom: 25%;
@@ -37,7 +47,7 @@ body {
 .section2 {
   height: 120vh;
   min-height: 500px;
-  background-image: url("img/BG3_Pond.png");
+  background-image: url("img/BG2_Snow.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
