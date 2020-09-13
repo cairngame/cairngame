@@ -1,3 +1,50 @@
 body {
-  padding-top: 5rem;
+
+}
+
+.masthead {
+  height: 120vh;
+  min-height: 500px;
+  background-image: url("img/CoverPicture-wip.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.transparentBG {
+  background-color: rgba(0,0,0,0);
+}
+
+
+.navbar{
+  border: none;
+
+}
+
+.buttonpadding {
+  padding-bottom: 25%;
+}
+
+.section1 {
+  height: 120vh;
+  min-height: 500px;
+  background-image: url("img/BG1_CampervanNoText.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.section2 {
+  height: 120vh;
+  min-height: 500px;
+  background-image: url("img/BG3_Pond.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+iframe {
+   display: block;
+   margin: 0 auto;
+
 }
