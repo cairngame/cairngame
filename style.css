@@ -51,6 +51,7 @@ nav-item{
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
+  margin-bottom: 50px;
 }
 
 .section1 {
@@ -83,6 +84,11 @@ iframe {
    display: block;
    margin: 0 auto;
 
+}
+
+steamiframe{
+  display: block;
+  padding-top: 10vh;
 }
 
 .iframe-container{
