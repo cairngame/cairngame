@@ -65,8 +65,8 @@ nav-item{
 }
 
 .section2 {
-  height: 120vh;
-  min-height: 500px;
+  height: calc(60vw);
+
   background-image: url("img/BG2_Snow.png");
   background-size: cover;
   background-position: center;
@@ -74,7 +74,7 @@ nav-item{
 }
 
 .section3 {
-  height: 120vh;
+
   min-height: 500px;
   background-image: url("img/BG3_Pond.png");
   background-size: cover;
@@ -92,10 +92,11 @@ nav-item{
 }
 .iframe-container iframe{
   position: absolute;
-  top:5%;
-  left:15%;
-  width: 80%;
-  height: 65%;
+
+  left:10%;
+  right:15%;
+  width: 90%;
+  height: 90%;
 }
 
 
@@ -110,5 +111,14 @@ nav-item{
 
   top:5%;
 
+
+}
+
+.image-container{
+  margin-top: 5%;
+  margin-bottom: auto;
+  margin-left: auto ;
+  margin-right: auto ;
+width: 60%;
 
 }
