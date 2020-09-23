@@ -86,11 +86,6 @@ iframe {
 
 }
 
-steamiframe{
-  display: block;
-  padding-top: 10vh;
-}
-
 .iframe-container{
   position: absolute;
   width: 90%;
@@ -104,4 +99,20 @@ steamiframe{
   left:15%;
   width: 80%;
   height: 65%;
+}
+
+
+.iframe-containersteam{
+  position: absolute;
+  width: 50%;
+  padding-bottom: 56.25%;
+  height: 0;
+
+}
+.iframe-containersteam iframe{
+  position: absolute;
+  top:5%;
+  left:25%;
+  width: 50%;
+  height:300%;
 }
