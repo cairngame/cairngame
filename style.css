@@ -67,7 +67,6 @@ body {
 
 .section2 {
   height: calc(60vw);
-
   background-image: url("img/BG2_Snow.png");
   background-size: cover;
   background-position: center;
@@ -99,7 +98,6 @@ footer {
   position: absolute;
   width: 90%;
   padding-bottom: 56.25%;
-  height: 0;
 
 }
 .iframe-container iframe{
@@ -129,6 +127,8 @@ footer {
 .image-container{
   margin-top: 5%;
   width: 60%;
-  height: auto;
-  display:block;
+}
+
+.description-text{
+  max-height:50%;
 }
