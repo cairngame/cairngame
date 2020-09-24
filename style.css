@@ -128,7 +128,6 @@ footer {
 
 .image-container{
   margin-top: 5%;
-
-width: 60%;
-
+  width: 60%;
+  height: auto;
 }
