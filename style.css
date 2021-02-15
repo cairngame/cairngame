@@ -6,16 +6,21 @@ body {
 
 .masthead {
   height: 120vh;
-  background-image: url("img/CoverPicture-wip.png");
+  background-image: url("img/Main_BG.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
-
+.carousel-video-inner {
+  text-align: center;
+}
 
 .navbar{
   border: none;
+  background-color:#000000; /*whichever you want*/
+  opacity: 0.5;
+  filter:(opacity=50);
 }
 
 
@@ -31,6 +36,26 @@ body {
   padding-top:3%;
 }
 
+.twitterbutton {
+  background-color: #55acee;
+}
+
+
+.textbox {
+  background-color: 32355c;
+}
+
+
+.btn-steam {
+    background-color: #000;
+}
+
+.page-footer {
+  background-color:#000000; /*whichever you want*/
+  opacity: 0.5;
+  filter:(opacity=50);
+}
+
 .btn-xlarge {
     padding-left:1vw;
     padding-right:1vw;
@@ -44,7 +69,7 @@ body {
 }
 
 .sectiontitle {
-  height: 25vh;
+  height: 35vh;
   max-height: 100%;
   background-image: url("img/Logo.png");
   background-size: contain;
@@ -55,14 +80,10 @@ body {
 }
 
 .section1 {
-  height: 120vh;
-  min-height: 500px;
-  background-image: url("img/BG1_CampervanNoText.png");
-  background-size: cover;
+  background-image: url("img/Tile_BG.png");
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   align-items: center;
-
 }
 
 .section2 {
@@ -86,10 +107,10 @@ body {
 footer {
 
   min-height: 100px;
-  background-image: url("img/BG3_Pond.png");
-  background-size: cover;
+  background-image: url("img/Tile_BG.png");
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
+  align-items: center;
   text-align: center;
 
 }
