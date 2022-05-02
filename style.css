@@ -5,12 +5,21 @@ body {
 }
 
 .masthead {
-  height: 120vh;
+  height: 100vh;
   background-image: url("img/Main_BG.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
+
+.masthead-about {
+  height: 100vh;
+  background-image: url("img/Main_BG.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 
 .carousel-video-inner {
   text-align: center;
@@ -18,15 +27,17 @@ body {
 
 .navbar{
   border: none;
-  background-color:#000000; /*whichever you want*/
+  /* background-color:#000000; /*whichever you want
   opacity: 0.5;
-  filter:(opacity=50);
+  filter:(opacity=50); */
+  background-color:rgba(0,0,0,0.3);
 }
 
 
 
 .navbar-nav > li{
      padding-left:3vw;
+     padding-top:0.3vw;
      padding-right:3vw;
 
 }
@@ -42,7 +53,13 @@ body {
 
 
 .textbox {
-  background-color: 32355c;
+  background-color:rgba(0,0,0,0.3);
+  border-radius: 25px;
+}
+
+.textbox-about {
+  background-color:rgba(0,0,0,0.5);
+  border-radius: 25px;
 }
 
 
@@ -76,7 +93,15 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   margin-bottom: 50px;
+}
 
+.sectiontitle-about {
+  height: 20vh;
+  max-height: 100%;
+  background-image: url("img/Logo.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .section1 {

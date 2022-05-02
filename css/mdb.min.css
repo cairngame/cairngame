@@ -137,7 +137,7 @@ hr:not([size]) {
 
 p {
   margin-top: 0;
-  margin-bottom: 1rem
+  margin-bottom: 1rem;
 }
 
 abbr[data-bs-original-title], abbr[title] {
@@ -210,12 +210,13 @@ sup {
 }
 
 a {
-  color: #1266f1;
+  color: #FFFFFF;
   text-decoration: underline
+
 }
 
 a:hover {
-  color: #0e52c1
+  color: #87ABE9
 }
 
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
