@@ -1,8 +1,9 @@
 @import "node_modules/bootstrap/scss/bootstrap";
 
 body {
-
+    overflow-x: hidden !important;
 }
+
 
 .masthead {
   height: 100vh;
@@ -10,6 +11,22 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.mastheadmain {
+  height: 100vh;
+}
+
+video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: fill;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
 }
 
 .masthead-about {
@@ -30,7 +47,7 @@ body {
   /* background-color:#000000; /*whichever you want
   opacity: 0.5;
   filter:(opacity=50); */
-  background-color:rgba(0,0,0,0.3);
+  background-color:rgba(50,53,92,0.6);
 }
 
 
