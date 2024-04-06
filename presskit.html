@@ -1,179 +1,438 @@
-<h5<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-177903900-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
+    <!-- META TAGS -->
+    <meta charset="utf-8">
+    <meta name="author" content="AtypicalThemes">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5"> 
 
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
+    <!-- WEBSITE TITLE & DESCRIPTION -->
+    <title>Cairn: Mathair's Curse - Presskit</title>
+    <meta name="description" content="Cairn: Mathair's Curse - Presskit">
+    <meta name="keywords" content="game, landing page, gaming, steam, presskit">
 
-    gtag('config', 'UA-177903900-1');
-  </script>
+    <!-- OG meta tags that improve the look of your post on social media -->
+    <meta property="og:site_name" content="Cairn: Mathair's Curse" /><!--website name-->
+    <meta property="og:site" content="https://www.cairngame.com/" /> <!--website link-->
+    <meta property="og:title" content="Cairn: Mathair's Curse"/> <!--Post title-->
+    <meta property="og:description" content="Cairn: Mathair's Curse is a JRPG about a boy and his mother. When an ancient curse is unleashed by a mysterious cult, Alex must venture from his home, make some unlikely friends, and awaken the power of his dreams to save his family…" /> <!--Post description-->
+    <meta property="og:image" content="" /><!-- Image link (jpg only)-->
+    <meta property="og:url" content="https://www.cairngame.com/" /> <!--where do you want your post to link to-->
+    <meta property="og:type" content="website" />
 
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Favicon and Apple Icons -->
+    <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
 
-  <!-- SEO meta tags-->
+    <!-- STYLES -->
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link href="css/fontawesome.min.css" rel="stylesheet">
+    <link href="css/all.min.css" rel="stylesheet">
+    <!-- Video Modal -->
+    <link href="css/modal-video.min.css" rel="stylesheet">
+    <!-- Animations -->
+    <link href="css/animations.css" rel="stylesheet">
+    <!-- Lightbox -->
+    <link href="css/lightbox.min.css" rel="stylesheet">
+    <!-- Main Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+        <!-- Main Stylesheet -->
+    <link href="css/master.css" rel="stylesheet">
+    
 
-  <meta name="description" content="Cairn: Mathair Curse is an PC Role Playing Game inspired by 90s JRPGs and Scottish culture. Available to Wishlist on Steam!">
-
-
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="css\mdb.min.css">
-  <!--<link rel="stylesheet" href="bootstrap.min.css">-->
-  <link href="style.css" rel="stylesheet.css">
-  <link href="style.css" rel="stylesheet">
-  <!-- Font Awesome -->
-<link
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
-  rel="stylesheet"
-/>
-<!-- Google Fonts -->
-<link
-  href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
-  rel="stylesheet"
-/>
-
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-  <script>
-  $(function() {
-    $(".carousel").on("slide.bs.carousel", function(e) {
-      var prev = $(this)
-        .find(".active")
-        .index();
-      var next = $(e.relatedTarget).index();
-      var video = $("#video-player")[0];
-      var videoSlide = $("#video-player")
-        .closest(".carousel-item")
-        .index();
-      if (next === videoSlide) {
-        if (video.tagName == "IFRAME") {
-          player.playVideo();
-        } else {
-          createVideo(video);
-        }
-      } else {
-        if (typeof player !== "undefined") {
-          player.pauseVideo();
-        }
-      }
-    });
-  });
-
-  function createVideo(video) {
-    var youtubeScriptId = "youtube-api";
-    var youtubeScript = document.getElementById(youtubeScriptId);
-    var videoId = video.getAttribute("data-video-id");
-
-    if (youtubeScript === null) {
-      var tag = document.createElement("script");
-      var firstScript = document.getElementsByTagName("script")[0];
-
-      tag.src = "https://www.youtube.com/iframe_api";
-      tag.id = youtubeScriptId;
-      firstScript.parentNode.insertBefore(tag, firstScript);
-    }
-
-    window.onYouTubeIframeAPIReady = function() {
-      window.player = new window.YT.Player(video, {
-        videoId: videoId,
-        playerVars: {
-          autoplay: 1,
-          modestbranding: 1,
-          rel: 0
-        }
-      });
-    };
-  }
-
-  </script>
-  <!-- MDB -->
-  <script
-    type="text/javascript"
-    src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.2.0/mdb.min.js"
-  ></script>
-
-  <style>
-    @media screen and (min-width: 1201px) {
-
-      .buttonsection {
-        display: none !important;
-      }
-
-      .img-fluid {
-        width: 60%;
-      }
-    }
-
-    @media (max-width: 1200px) {
-      .iframe-containersteam {
-        display: none !important;
-      }
-
-    }
-  </style>
-
-
-  <title>Cairn: Mathair's Curse</title>
 </head>
-
 <body>
+    <!-- //// HEADER //// -->
+    <header id="main-header">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
+            <div class="container">
+                <!-- Site Logo 
+                <a id="main-logo" class="navbar-brand" href="index.html"><span class="colored">/</span>ARSNL<span class="colored">\</span></a>-->
+                <!-- IMG Logo 
+                <img src="images/logo.png" id="main-logo" class="navbar-brand" alt="logo">
+                -->
+                <!-- Dropdown Button -->
+                <button id="hamburger" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                </button>
+                <!-- Navigation Links -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#features">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#media">Media</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="presskit.html">Presskit</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://store.steampowered.com/app/1302530/Cairn_Mathairs_Curse/">Wishlist</a>
+                        </li>
 
-  <!-- Full Page Image Header with Vertically Centered Content -->
-  <header class="masthead-about">
+                        <!-- Dropdown Menu          
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle page-scroll" data-toggle="dropdown" href="#" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">Extras</a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="terms_and_conditions.html"><span class="item-text">Terms &amp; Conditions</span></a>
+                                <div class="dropdown-items-divide-hr"></div>
+                                <a class="dropdown-item" href="privacy_policy.html"><span class="item-text">Privacy Policy</span></a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#cta">Purchase</a>
+                        </li>--> 
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header><!-- Header End -->    
+    <div class="extra-page">
+        <!-- /// HERO SECTION ///
+        <section id="hero-section" class="extra-page-header">
+            <div class="row">
+                <div class="container">
+                    <div class="row text-center">
+                        <div class="col-md-12">
+                            <div class="hero-caption-extra-page">
+                                <h1>Presskit</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
 
-    <nav class="navbar navbar-expand pt-0 pb-0">
-      <div class="container-fluid">
-        <ul class="navbar-nav mx-auto">
-          <li class="nav-item active">
-            <a class="nav-link h4" aria-current="page" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link h4" href="faq.html">FAQ</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link h4" href="presskit.html">Press Kit</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+        <!-- Breadcrumbs 
+        <nav aria-label="breadcrumb" class="small-margin breadcrumb-nav">
+            <div class="container">
+                <div class="row">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Presskit</li>
+                    </ol>
+                </div>
+            </div>
+        </nav>-->
 
-    <section class="py pt-5 pb-5">
-      <div class="container text-center sectiontitle-about">
-      </div>
-    </section>
+        <section class="extra-page-content">
+            <div class="container">
+                <main class="page-content" role="main">
+                    <section class="block grid">
+                      <aside class="factsheet grid__item">
+                        <h2 id="factsheet" class="factsheet__title">Factsheet</h2>
+                      
+                      
+                        <dl class="factsheet__list">
+                          <dt>Developer:</dt>
+                          <dd>
+                            <a href="..">Ross McRitchie</a>
+                          </dd>
+                          <dd>Based in Dundee, Scotland</dd>
+                      
+                      
+                          <dt>Release date:</dt>
+                      
+                          <dt>Platforms:</dt>
+                          <dd>
+                              <a href="http://steampowered.com/">PC</a>
+                          </dd>
+                      
+                          <dt>Website:</dt>
+                          <dd>
+                            <a href="https://cairngame.com">cairngame.com</a>
+                          </dd>
+                      
+                          <dt>Regular Price:</dt>
+                          <dd>TBC </dd>
+                      
+                      
+                        </dl>
+                      
+                        <!--<p class="press">
+                          <a href="TBC" class="button" tabindex="0">
+                            Request Press Copy
+                          </a>
+                        </p>-->
+                      </aside>
+          
+                      <article class="description grid__item">
+                        <h2 id="description">Description</h2>
+                        <p>Cairn: Mathair’s Curse is a turn-based story driven JRPG about a boy and his mother, in an epic story that explores love, loss and family.
+                        When a mysterious cult unleashes an ancient curse on their home, Alex and his friends must embark on an adventure, defeating wacky enemies, solving puzzles and meeting new friends along the way. 
+                         </p>
+                        
+                        <h2 id="history">History</h2>
+                        <p>Cairn: Mathair’s Curse is developed by solo developer Ross McRitchie. The game is based on Ross’s life experience with family and loss and dedicated to his mother and grandmother. He has spent the last 4 years, designing the world, developing the game’s art, programming, and writing. The 16-bit soundtrack is produced by his partner, Christine. Ross and Christine are based in Dundee, Scotland. </p>
+                        
+          
+                        <h2 id="features">Features</h2>
+                        <ul>
+                          <li>Full-length 20+ hour single-player JRPG</li>
+                          <li>A story-rich narrative steeped in Celtic mythology and Scottish culture (and humour)!</li>
+                          <li>Funky turned-based combat with ridiculous enemies, including Haggis and stop-signs...(Watch out!)</li>
+                          <li>Stunning hand-crafted pixel art from picturesque beaches, snowy forests and secret hi-tech lairs!</li>
+                          <li>Solve puzzles to unlock areas, find presents and more!</li>
+                        </ul>
+                      </article>
+                    </section>
+          
+                    <section class="block">
+                      <h2 id="videos">Videos</h2>
+                    
+                      <div>
+                        <p>
+                          <strong>Mother Direct 2023 Trailer</strong> — <a href="https://www.youtube.com/embed/PMcVtEmvfsU?rel=0">YouTube</a> 
+                        </p>
+                    
+                        <div class="video-player">
+                          <iframe class="video-player__frame" src="https://www.youtube.com/embed/PMcVtEmvfsU?rel=0" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    
+                    
+                      </div>
+                    </section>
+                    
+                    <section class="block">
+                      <h2 id="images">Images</h2>
+                    
+                      <aside class="block__notice">
+                        <a href="images/images.zip">
+                          download all screenshots & photos as .zip
+                        </a>
+                      </aside>
+                    
+                      <div class="gallery clearfix" id="gallery">
+                        <div class="gallery__item">
+                          <a href="images/battle.jpg">
+                            <img src="images/battle.jpg.thumb.jpg" alt="battle">
+                          </a>
+                        </div>
+                        <div class="gallery__item">
+                          <a href="images/ghostenemy.jpg">
+                            <img src="images/ghostenemy.jpg.thumb.jpg" alt="ghostenemy">
+                          </a>
+                        </div>
+                        <div class="gallery__item">
+                          <a href="images/ingamemenu.jpeg">
+                            <img src="images/ingamemenu.jpeg.thumb.jpg" alt="ingamemenu">
+                          </a>
+                        </div>
+                        <div class="gallery__item">
+                          <a href="images/meadow.jpg">
+                            <img src="images/meadow.jpg.thumb.jpg" alt="meadow">
+                          </a>
+                        </div>
+                        <div class="gallery__item">
+                          <a href="images/menu.png">
+                            <img src="images/menu.png.thumb.jpg" alt="menu">
+                          </a>
+                        </div>
+                        <div class="gallery__item">
+                          <a href="images/mother.jpg">
+                            <img src="images/mother.jpg.thumb.jpg" alt="mother">
+                          </a>
+                        </div>
+                        <div class="gallery__item">
+                          <a href="images/snow.jpg">
+                            <img src="images/snow.jpg.thumb.jpg" alt="snow">
+                          </a>
+                        </div>
+                        <div class="gallery__item">
+                          <a href="images/Sunset.png">
+                            <img src="images/Sunset.png.thumb.jpg" alt="Sunset">
+                          </a>
+                        </div>
+                      </div>
+                    
+                    </section>
+                    
+                    <section class="block">
+                        <h2 id="logo">Logo & Icon</h2>
+                      
+                        <aside class="block__notice">
+                          <a href="images/logo.zip">
+                            download logo files as .zip
+                          </a>
+                        </aside>
+                      
+                        <a href="images/Logo.png">
+                          <img src="images/Logo.png" alt="Logo" class="logo">
+                        </a>
+                      </section>
+                    <section class="block">
+                      <h2 id="widgets">Widgets</h2>
+                    
+                      <div class="grid">
+                    
+                      </div>
+                    
+                      <p>
+                        <iframe src="https://store.steampowered.com/widget/1302530/" frameborder="0" class="widget widget--steam"></iframe>
+                      </p>
+                    
+                    
+                    
+                    
+                    </section>
+                    <!--<section class="block">
+                      <h2 id="awards">Awards & Recognition</h2>
+                    
+                      <ul>
+                        <li>"" <cite></cite></li>
+                      </ul>
+                    </section>-->
+                    
+                    <section class="block">
+                      <h2 id="articles">Selected Articles</h2>
+                    
+                      <ul>
+                        <li class="quote">
+                          <blockquote class="quote__content" cite="https://store.steampowered.com/curator/35086009-Noteworthy-Video-Games-Upcomin/">
+                            A Scottish Earthbound-esque RPG with nice pixel art. An impressive solo developed title.
+                          </blockquote>
+                          <cite class="quote__author">
+                            Noteworthy Video Games - Upcoming, <a href="https://store.steampowered.com/curator/35086009-Noteworthy-Video-Games-Upcomin/">Steam</a>
+                          </cite>
+                        </li>
+                      </ul>
+                    </section>
+                    
+                    <!--<section class="block">
+                      <h2 id="links">Additional Links</h2>
+                    
+                      <dl>
+                        <dt></dt>
+                        <dd>
+                           <a href=""></a>.
+                        </dd>
+                      </dl>
+                    </section>-->
+                    
+                    <section class="block">
+                      <h2 id="about_Ross McRitchie">About Ross McRitchie</h2>
+                    
+                      <dl>
+                        <dt>Boilerplate</dt>
+                        <dd>Ross McRitchie is a indie developer based in Dundee, Scotland.</dd>
+                    
+                        <dt>More information</dt>
+                        <dd>More information on Ross McRitchie is available <a href="https://www.rossmcritchie.com/">here</a>.</dd>
+                      </dl>
+                    </section>
+                    <section class="block grid _team-fix-margin-top">
+                      <article class="grid__item grid__item--flexible">
+                        <h2 id="credits">Cairn: Mathair&#x27;s Curse Credits</h2>
+                    
+                        <dl>
+                          <dt>Christine Canavan</dt>
+                    
+                          <dd>
+                              Music Composer
+                          </dd>
+                        </dl>
+                      </article>
+                    
+                      <article class="grid__item grid__item--flexible">
+                        <h2 id="contact">Contact</h2>
+                    
+                        <dl>
+                          <dt>Inquiries</dt>
+                    
+                          <dd>
+                            <a href="mailto:cairngamedev@gmail.com">cairngamedev@gmail.com</a>
+                    
+                          </dd>
+                          <dt>Twitter</dt>
+                    
+                          <dd>
+                    
+                            <a href="
+                            https://twitter.com/RossGameDev
+                          ">twitter.com/RossGameDev</a>
+                          </dd>
+                        </dl>
+                      </article>
+                    </section>
+                  </main>
 
+            </div>
+        </section>
 
-            <!-- Section 2 -->
-        <div class="section-container pt-5 pb-5">
-          <div class="container pt-5 pb-5 textbox-about">
-              <div class="row">
-                <div class="col-sm-9 mx-auto section-2-box wow fadeInLeft text-light">
-                      <h5>What is CAIRN: MATHAIR’S CURSE?</h5>
-                      <p>Cairn: Mathair's Curse is a turn-based JRPG inspired by Scottish culture. Set in Albaness, Alex and his friends explore locations, solve puzzles and defeat monsters in their adventure!</p>
-                      <h5>What platform is Cairn: Mathair's Curse available?</h5>
-                      <p>Cairn: Mathair's Curse will release for the PC (Windows) on Steam. You can play the demo and wishlist the game on steam here!</p>
-                      <h5>Who is developing Cairn:Mathair's Curse?</h5>
-                      <p>Cairn: Mathair's Curse is developed by Ross McRitchie, a Scottish game developer based in Dundee.</p>
+        <!-- Breadcrumbs 
+        <nav aria-label="breadcrumb" class="breadcrumb-nav">
+            <div class="container">
+                <div class="row">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Privacy Policy</li>
+                    </ol>
+                </div>
+            </div>
+        </nav>-->
 
-
-                  </div>
-              </div>
-          </div>
+        <!-- /// FOOTER /// 
+        <div id="footer-extra">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h3>About ARNSL</h3>
+                        <p>ARSNL Landing Page uses tracking technology on the landing page.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h3>Important Links</h3>
+                        <ul class="extra-links">
+                            <li>Read our <a href="terms_and_conditions.html">Terms &amp; Conditions</a></li>
+                            <li>Our Partners <a href="#">Examplesite.com</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <h3>Social Links</h3>
+                        <ul class="social-links">
+                          <li><a href="https://twitter.com/RossGameDev"><i class="fab fa-twitter  fa-lg icon-social"></i></a></li>
+                          <li><a href="https://www.instagram.com/rossgamedev/"><i class="fab fa-instagram fa-lg icon-social"></i></a>
+                          <li><a href="https://www.youtube.com/watch?v=PMcVtEmvfsU"><i class="fab fa-youtube fa-lg icon-social"></i></a>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row text-center">
+                    <div class="col-md-12">
+                        <p id="copyright">&copy; ARSNL <span id="year"> </span> - Game Landing Page by <a href="#">Atypicalthemes</a></p>
+                    </div>
+                </div>
+            </div>
         </div>
-
-      </section>
-    </header>
-    </body>
-
-    </html>
+    </div>-->
+    
+    <!-- //// SCRIPTS //// -->
+    <script src="js/jquery-3.4.0.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/blazy.min.js"></script>
+    <script src="js/jquery-modal-video.min.js"></script>
+    <script src="js/lightbox.min.js"></script>
+    <script src="js/validator.min.js"></script>
+    <script src="js/arsnl.js"></script>    
+</body>

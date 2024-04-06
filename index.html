@@ -1,323 +1,470 @@
-<h5<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-177903900-1"></script>
-  <script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-R1W5PC353E"></script>
+    <script>
     window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-      dataLayer.push(arguments);
-    }
+    function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
 
-    gtag('config', 'UA-177903900-1');
-  </script>
+    gtag('config', 'G-R1W5PC353E');
+    </script>
 
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    
+    <!-- META TAGS -->
+    <meta charset="utf-8">
+    <meta name="author" content="Ross McRitchie">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5"> 
 
-  <!-- SEO meta tags-->
+    <!-- WEBSITE TITLE & DESCRIPTION -->
+    <title>Cairn: Mathair's Curse</title>
+    <meta name="description" content="Cairn: Mathair's Curse">
+    <meta name="keywords" content="game, landing page, gaming, steam">
 
-  <meta name="description" content="Cairn: Mathair Curse is an PC Role Playing Game inspired by 90s JRPGs and Scottish culture. Available to Wishlist on Steam!">
+    <!-- OG meta tags that improve the look of your post on social media -->
+    <meta property="og:site_name" content="Cairn: Mathair's Curse" /><!--website name-->
+    <meta property="og:site" content="https://www.cairngame.com/" /> <!--website link-->
+    <meta property="og:title" content="Cairn: Mathair's Curse"/> <!--Post title-->
+    <meta property="og:description" content="Cairn: Mathair's Curse is a JRPG about a boy and his mother. When an ancient curse is unleashed by a mysterious cult, Alex must venture from his home, make some unlikely friends, and awaken the power of his dreams to save his family…" /> <!--Post description-->
+    <meta property="og:image" content="" /><!-- Image link (jpg only)-->
+    <meta property="og:url" content="https://www.cairngame.com/" /> <!--where do you want your post to link to-->
+    <meta property="og:type" content="website" />
 
+    <!-- Favicon and Apple Icons -->
+    <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
 
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="css\mdb.min.css">
-  <!--<link rel="stylesheet" href="bootstrap.min.css">-->
-  <link href="style.css" rel="stylesheet.css">
-  <link href="style.css" rel="stylesheet">
-  <!-- Font Awesome -->
-<link
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
-  rel="stylesheet"
-/>
-<!-- Google Fonts -->
-<link
-  href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
-  rel="stylesheet"
-/>
-
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-  <script>
-  $(function() {
-    $(".carousel").on("slide.bs.carousel", function(e) {
-      var prev = $(this)
-        .find(".active")
-        .index();
-      var next = $(e.relatedTarget).index();
-      var video = $("#video-player")[0];
-      var videoSlide = $("#video-player")
-        .closest(".carousel-item")
-        .index();
-      if (next === videoSlide) {
-        if (video.tagName == "IFRAME") {
-          player.playVideo();
-        } else {
-          createVideo(video);
-        }
-      } else {
-        if (typeof player !== "undefined") {
-          player.pauseVideo();
-        }
-      }
-    });
-  });
-
-  function createVideo(video) {
-    var youtubeScriptId = "youtube-api";
-    var youtubeScript = document.getElementById(youtubeScriptId);
-    var videoId = video.getAttribute("data-video-id");
-
-    if (youtubeScript === null) {
-      var tag = document.createElement("script");
-      var firstScript = document.getElementsByTagName("script")[0];
-
-      tag.src = "https://www.youtube.com/iframe_api";
-      tag.id = youtubeScriptId;
-      firstScript.parentNode.insertBefore(tag, firstScript);
-    }
-
-    window.onYouTubeIframeAPIReady = function() {
-      window.player = new window.YT.Player(video, {
-        videoId: videoId,
-        playerVars: {
-          autoplay: 1,
-          modestbranding: 1,
-          rel: 0
-        }
-      });
-    };
-  }
-
-  </script>
-  <!-- MDB -->
-  <script
-    type="text/javascript"
-    src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.2.0/mdb.min.js"
-  ></script>
-
-<style>
-    @media screen and (min-width: 1201px) {
-
-      .buttonsection {
-        display: none !important;
-      }
-
-      .img-fluid {
-        width: 60%;
-      }
-    }
-
-    @media (max-width: 1200px) {
-      .iframe-containersteam {
-        display: none !important;
-      }
-
-    }
-  </style>
-
-
-  <title>Cairn: Mathair's Curse</title>
+    <!-- STYLES -->
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link href="css/fontawesome.min.css" rel="stylesheet">
+    <link href="css/all.min.css" rel="stylesheet">
+    <!-- Video Modal -->
+    <link href="css/modal-video.min.css" rel="stylesheet">
+    <!-- Animations -->
+    <link href="css/animations.css" rel="stylesheet">
+    <!-- Lightbox -->
+    <link href="css/lightbox.min.css" rel="stylesheet">
+    <!-- Main Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
 </head>
-
 <body>
-
-  <!-- Full Page Image Header with Vertically Centered Content -->
-  <header class="mastheadmain">
-
-    <video playsinline autoplay muted loop poster="img/Main_BG.png">
-    <source src="video/CairnBackground.mp4" type="video/mp4">
-        </video>
-
-    <nav class="navbar navbar-expand pt-0 pb-0">
-      <div class="container">
-        <ul class="navbar-nav mx-auto">
-          <li class="nav-item active">
-            <a class="nav-link h4" aria-current="page" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link h4" href="faq.html">FAQ</a>
-          </li>
-          <!--<li class="nav-item">
-            <a class="nav-link h4" href="presskit.html">Press Kit</a>
-          </li>-->
-        </ul>
-      </div>
-    </nav>
-
-
-    <div class="container">
-
-      <!-- Navigation -->
-
-      <section class="py-5">
-        <div class="container text-center sectiontitle">
-        </div>
-      </section>
-
-      <!--<div class="d-flex buttonsection align-items-center">
-                <a class="btn-xlarge btn-primary" href="https://store.steampowered.com/app/1302530/Cairn_Mathairs_Curse/" role="button">Wishlist now!</a>
-        </div>-->
-      <div class="iframe-containersteam" align="center">
-        <iframe src="https://store.steampowered.com/widget/1302530/" frameborder="0" width="646" height="190"></iframe>
-      </div>
-    </div>
-
-    <div class="d-flex buttonsection align-items-center">
-      <a class="btn-xlarge btn-primary" href="https://store.steampowered.com/app/1302530/Cairn_Mathairs_Curse/" role="button">Wishlist on Steam!</a>
-    </div>
-
-  </header>
-
-  <!-- Page Content -->
-  <section class="section1 align-items-center pt-5 pb-5">
-    <div class="row">
-        <div class="col col-md-10 offset-md-1 col-lg-8 offset-lg-2">
-
-          <div id="carouselExampleIndicators" class="carousel slide" data-mdb-ride="carousel">
-        <ol class="carousel-indicators">
-          <li
-            data-mdb-target="#carouselExampleIndicators"
-            data-mdb-slide-to="0"
-            class="active"
-          ></li>
-          <li data-mdb-target="#carouselExampleIndicators" data-mdb-slide-to="1"></li>
-          <li data-mdb-target="#carouselExampleIndicators" data-mdb-slide-to="2"></li>
-          <li data-mdb-target="#carouselExampleIndicators" data-mdb-slide-to="3"></li>
-          <li data-mdb-target="#carouselExampleIndicators" data-mdb-slide-to="4"></li>
-          <li data-mdb-target="#carouselExampleIndicators" data-mdb-slide-to="5"></li>
-        </ol>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="embed-responsive embed-responsive-16by9">
-              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/PMcVtEmvfsU" allowfullscreen></iframe>
+    <!-- Cookies Notification 
+    <div id="cookies">
+        <div class="cookies-bar">
+            <div class="cookies-wrapper">
+             <p>This website uses cookies to track visitors. Please see our <a href="privacy_policy.html">Privacy Policy</a> for more information.</p>
             </div>
-          </div>
-          <div class="carousel-item">
-            <img
-              src="img\inaclearing.png"
-              class="d-block w-100"
-              alt="..."
-            />
-          </div>
-          <div class="carousel-item">
-            <img
-              src="img\furniture.png"
-              class="d-block w-100"
-              alt="..."
-            />
-          </div>
-          <div class="carousel-item">
-            <img
-              src="img\cave.png"
-              class="d-block w-100"
-              alt="..."
-            />
-          </div>
-          <div class="carousel-item">
-            <img
-              src="img\paintingdemon.png"
-              class="d-block w-100"
-              alt="..."
-            />
-          </div>
-          <div class="carousel-item">
-            <img
-              src="img\grahamcourtyard.png"
-              class="d-block w-100"
-              alt="..."
-            />
-          </div>
+            <button class="button" id="cookies-close">X</button>
         </div>
-        <a
-          class="carousel-control-prev"
-          href="#carouselExampleIndicators"
-          role="button"
-          data-mdb-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </a>
-        <a
-          class="carousel-control-next"
-          href="#carouselExampleIndicators"
-          role="button"
-          data-mdb-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </a>
-      </div>
-    <!-- End carousel row -->
-</div>
-</div>
+    </div>-->
+    <!-- //// HEADER //// -->
+    <header id="main-header">
+        <a id="home"></a><!-- Nav anchor -->
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
+            <div class="container">
+                <!-- Site Logo 
+                <a id="main-logo" class="navbar-brand" href="#"><span class="colored">/</span>ARSNL<span class="colored">\</span></a>-->
+                <!-- IMG Logo 
+                <img src="images/logo.png" id="main-logo" class="navbar-brand" alt="logo">
+                -->
+                <!-- Dropdown Button -->
+                <button id="hamburger" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                </button>
+                <!-- Navigation Links -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#features">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#media">Media</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="presskit.html">Presskit</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://store.steampowered.com/app/1302530/Cairn_Mathairs_Curse/">Wishlist</a>
+                        </li>
 
+                        <!-- Dropdown Menu          
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle page-scroll" data-toggle="dropdown" href="#" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">Extras</a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="terms_and_conditions.html"><span class="item-text">Terms &amp; Conditions</span></a>
+                                <div class="dropdown-items-divide-hr"></div>
+                                <a class="dropdown-item" href="privacy_policy.html"><span class="item-text">Privacy Policy</span></a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#cta">Purchase</a>
+                        </li>--> 
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header><!-- Header End -->
 
+    <!-- /// HERO SECTION /// -->
+    <section id="hero-section">
+        <div class="row hero-unit">
+            <div class="container">
+                <div class="row text-center justify-content-center">
+                    <div class="col">
+                        <div class="hero-caption a="><!-- Main Tagline -->
+                            <img src="images/Logo.png" class="img-fluid headline" alt="source code">
+
+                            </div>
+                        <div class="iframe-containersteam">
+                                <iframe src="https://store.steampowered.com/widget/1302530/" frameborder="0" width="646" height="190"></iframe>
+                              </div>
+                            <div class="d-flex buttonsection align-items-center">
+                                <a href="https://store.steampowered.com/app/1302530/Cairn_Mathairs_Curse/" class="button">WISHLIST NOW</a>
+                            </div>
+
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><!-- Hero Section End -->
+
+    
+    <!-- /// ABOUT SECTION /// -->
+    <section id="about-section" class="full-width-about">
+        
+        <div class="container">
+            
+            <div class="row">
+                <div class="col-lg-6 col-md-12"><a id="about"></a><!-- Nav anchor -->
+                    <h1 class="short-hr-left">Cairn: Mathair's Curse</h1>
+                    <p>Cairn: Mathair’s Curse is a JRPG about a boy and his mother. When an ancient curse is unleashed by a mysterious cult, Alex must venture from his home, make some unlikely friends, and awaken the power of his dreams to save his family…</p>
+                    <br>
+                    <div align="center">
+                        <h2>Features</h2>
+                        <ul style="list-style-type:square; list-style-position: inside;">
+                            <li>Full-length single-player JRPG</li>
+                            <li>A story-rich narrative steeped in Celtic mythology and Scottish culture</li>
+                            <li> Use your dreams to enter a mysterious dark realm</li>
+                            <li>Funky turned-based combat</li>
+                            <li>Meet lots of weird and quirky characters</li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="video-box animation-element fade-in">
+                        <a class="js-video-button" data-video-id='liuEQda-EOU' data-channel="youtube">
+                            <img class="play-button" src="images/play-button-white.svg" alt="play-button">
+                            <h3>WATCH TRAILER</h3>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
+    <!-- /// ABOUT SECTION /// -->
+    <section id="about-section-story" class="full-width-about-story d-flex align-items-end">
+        <div class="container-fluid">
+            <div class="row text-center justify-content-center">
+                <div class="col-md-5"><a id="about"></a><!-- Nav anchor -->
+                    <h1 class="short-hr-center">Meet the Team</h1>
+                    <ul style="list-style-type:square; list-style-position: inside;">
+                        <li><b>Alex</b> lives with his family but never strays too far from his mum.
+                        
+                        He is often seen roaming the island with his best friend, Andy.<br></li>
+                    <li>
+                        An explorer through and through, <b>Andy</b> cannot pass up an adventure.                      
+                        One of these days, Andy's adventures could land him in hot water, or worse.
+                        
+                        <br></li>
+                    <li>A natural musician, <b>Eilidh</b> concentrates on playing the violin and performing music for the locals.                        
+                        Unsure where life will take her, a local performance got her noticed by the captain of a cruise ship and offered her a job she couldn't refuse.<br></li>
+                    <li><b>Graham</b> is the son of a rich property developer, and spends most his time anywhere his Father and Step-mother are not.
+
+                        His hobbies are reading lengthy books and keeping his cat, Spice, out of his father's hair. (What's left of it.)
+                        <br></li>
+                    </ul>
+                </div>
+            </div>      
+            <div class="row justify-content-center">
+                <div class="d-flex">
+                    <img src="images/character1.png" class="team-image animation-element slide-in-left">
+                    <img src="images/character4.png" class="team-image animation-element slide-in-left">
+                    <img src="images/character3.png" class="team-image animation-element slide-in-left">
+                    <img src="images/character2.png" class="team-image animation-element slide-in-left">
+                </div>
+            </div>
+        </div>
+    </section>    
 
 
-        <!-- Section 2 -->
-        <div class="section1 section-container pt-5 pb-5">
-          <div class="container pt-5 pb-5 textbox">
-              <div class="row">
-                <div class="col-sm-9 mx-auto section-2-box wow fadeInLeft text-center text-light">
-                      <h2>CAIRN: MATHAIR’S CURSE</h2><br>
-                      <p>
-                        When an ancient evil is awoken by an odd cult, a boy must venture from his home to save his mum... (and the world...).
-                      <br>
-                        Cairn: Mathair's Curse is a turn-based JRPG inspired by Scottish culture. Set in Albaness, Alex and his friends explore locations, solve puzzles and defeat strange and unusual enemies in their adventure!</p>
-                    <br><br>  <h3>FEATURES</h3><br>
-
-
-                      <p> <strong> Weird and wonderful world to discover:</strong> Explore the rolling forests, bustling cities and secret lairs of Albaness!</p>
-                <p><strong>Uncover an ancient conspiracy:</strong> Put rest to a conspiracy 1000 years in the making...</p>
-      <p><strong>Meet strange and colourful characters:</strong> Make friends (or enemies) with throughout Albaness!</p>
-      <p><strong>Quirky Turn-Based Battle System:</strong> Make fisticuffs with an array of odd and unusual enemies!</p>
-      <p><strong>Original Soundtrack:</strong> Have your ears filled with a handcrafted 90’s inspired soundtrack!</p>
-
-
+        <!-- /// FEATURES SECTION /// -->
+        <section id="features-section">
+            <div class="container-fluid">
+                <a id="features"></a><!-- Nav anchor -->
+                <div class="row features text-center">
+                    <div class="col-md-4 feature-card">
+                        <h2 class="short-hr-center">EXPLORE ALBANESS</h2>
+                        <p>Explore the country of Albaness, from Idyllic coastal vistas to the dark places that lurk beneath it.</p>
+                    </div>
+                    <div class="col-md-4 feature-card">
+                        <h2 class="short-hr-center">FIGHT YOUR FOES</h2>
+                        <p>Take on the weird, the whacky, and the forces of darkness in tactical turn-based combat.</p>
+                    </div>
+                    <div class="col-md-4 feature-card">
+                        <h2 class="short-hr-center">ENTER YOUR DREAMS</h2>
+                        <p>Unravel an ancient conspiracy that threatens everything you hold dear in this emotional 90's inspired JRPG.</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </section>
+    
+    <!-- /// MEDIA SECTION /// -->
+    <section id="media-section">
+        <a id="media"></a><!-- Nav Anchor -->
+        <div class="grid-gallery">
+            <div class="row">
+                <div class="col-md-4 gallery-item">
+                    <a href="images/Screen1.jpg" data-lightbox="studio_gallery">
+                        <div class="overlay"></div>
+                        <img src="images/Screen1.jpg" data-src="images/Screen1.jpg" class="img-fluid b-lazy" alt="">
+                    </a>
+                </div>
+                <div class="col-md-4 gallery-item">
+                    <a href="images/Screen2.jpg" data-lightbox="studio_gallery">
+                        <div class="overlay"></div>
+                        <img src="images/Screen2.jpg" data-src="images/Screen2.jpg" class="img-fluid b-lazy" alt="">
+                    </a>
+                </div>
+                <div class="col-md-4 gallery-item">
+                    <a href="images/Screen3.jpg" data-lightbox="studio_gallery">
+                        <div class="overlay"></div>
+                        <img src="images/Screen3.jpg" data-src="images/Screen3.jpg" class="img-fluid b-lazy" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 gallery-item">
+                    <a href="images/Screen4.jpg" data-lightbox="studio_gallery">
+                        <div class="overlay"></div>
+                        <img src="images/Screen4.jpg" data-src="images/Screen4.jpg" class="img-fluid b-lazy" alt="">
+                    </a>
+                </div>
+                <div class="col-md-4 gallery-item">
+                    <a href="images/Screen5.jpg" data-lightbox="studio_gallery">
+                        <div class="overlay"></div>
+                        <img src="images/Screen5.jpg" data-src="images/Screen5.jpg" class="img-fluid b-lazy" alt="">
+                    </a>
+                </div>
+                <div class="col-md-4 gallery-item">
+                    <a href="images/Screen6.jpg" data-lightbox="studio_gallery">
+                        <div class="overlay"></div>
+                        <img src="images/Screen6.jpg" data-src="images/Screen6.jpg" class="img-fluid b-lazy" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- /// CTA SECTION /// -->
+    <section id="cta-section" class="full-width">
+        <a id="cta"></a><!-- Nav Anchor -->
+        <div class="container">
+            <div class="row tiny-margin cta-card">
+                <div class="col-md-6">
+                    <img src="images/game.png" class="img-fluid game-box animation-element slide-in-left">
+                </div>
+                <div class="col-md-6">
+                    <h1>SAVE<br>YOUR<br>FAMILY</h1>
+                    <a class="button" href="https://store.steampowered.com/app/1302530/Cairn_Mathairs_Curse/">WISHLIST NOW</a>
+                    <p data-toggle="modal" data-target="#systemreq" class="modal-expand">System Requirements</p>
+                </div>
+                <!-- System Requirements Modal -->
+                <div class="modal fade" id="systemreq" tabindex="-1" role="dialog" aria-labelledby="system requirements" aria-hidden="true">
+                  <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h2 class="modal-title" id="system requirements">SYSTEM REQUIREMENTS</h2>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                          <h3>Minimum System Requirements</h3>
+                          <ul>
+                            <li><b>CPU:</b> Intel Pentium III 800 MHz</li>
+                            <li><b>RAM:</b> 1 GB RAM</li>
+                            <li><b>OS:</b>Microsoft Windows 7-64 bit or later</li>
+                            <li><b>VIDEO CARD:</b> DirectX 9/OpenGL 4.1 capable GPU</li>
+                            <li><b>FREE</b> DISK SPACE: 1 GB</li>
+                          </ul>
+                          <!--<br>
+                          <h3>Recommended System Requirements</h3>
+                          <ul>
+                            <li><b>CPU:</b> Intel CPU Core i7 3770 3.4 GHz / AMD CPU AMD FX-8350 4 GHz</li>
+                            <li><b>RAM:</b> 8 GB</li>
+                            <li><b>OS:</b> 64-bit Windows 7 or 64-bit Windows 8 (8.1)</li>
+                            <li><b>VIDEO CARD:</b> Nvidia GPU GeForce GTX 770 / AMD GPU Radeon R9 290</li>
+                            <li><b>FREE</b> DISK SPACE: 40 GB</li>
+                          </ul>-->
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="button modal-btn" data-dismiss="modal">CLOSE</button>
+                      </div>
+                    </div>
                   </div>
-              </div>
-          </div>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-12">
+                    <img src="images/platforms.png" class="img-fluid platforms">
+                </div>
+            </div>
         </div>
+    </section>
+    
+    <!-- DLC SECTION /// 
+    <section id="dlc-section" class="full-width">
+        <div class="container">
+            <div class="row tiny-margin">
+                <div class="col-xl-6">
+                    <img src="images/dlc.jpg" class="img-fluid">
+                </div>
+                <div class="col-xl-6">
+                    <div class="dlc-card">
+                        <h2 class="short-hr-left">EMPIRE DLC</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mi eros, scelerisque vitae diam eu, malesuada pellentesque sapien. Aenean faucibus nisl lacus, non finibus mauris pulvinar et. Sed ultrices laoreet est, id gravida lorem tincidunt at.</p>
+                        <a class="button" href="#">BUY ON PS4</a>
+                        <a class="button" href="#">BUY ON XB1</a>
+                        <a class="button" href="#">BUY ON PC</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-6">
+                    <img src="images/dlc.jpg" class="img-fluid">
+                </div>
+                <div class="col-xl-6">
+                    <div class="dlc-card">
+                        <h2 class="short-hr-left">REBIRTH DLC</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mi eros, scelerisque vitae diam eu, malesuada pellentesque sapien. Aenean faucibus nisl lacus, non finibus mauris pulvinar et. Sed ultrices laoreet est, id gravida lorem tincidunt at.</p>
+                        <a class="button" href="#">BUY ON PS4</a>
+                        <a class="button" href="#">BUY ON XB1</a>
+                        <a class="button" href="#">BUY ON PC</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>-->
+    <section id="extras" class="full-width">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-12">
+                    <img src="images/Logo.png" class="img-fluid headline" alt="source code">
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <div class="row tiny-margin">
+                        <div class="col-md-12">
+                            <h1>STAY IN TOUCH</h1>
+                            <p>Get the latest news on the development and release of Cairn: Mathair's Curse!</p>
+                        </div>
+                    </div>
+                    <!--<div id="newsletter-box" class="row tiny-margin">
+                        <div class="col-md-12">
+                            <h3>NEWSLETTER</h3>    
+                            <form id="newsletter" data-toggle="validator">
+                                <input type="email" id="emailsign" placeholder="Your Email Address">
+                                <button type="submit" id="form-signup" class="button">SUBSCRIBE</button>
+                                <div id="msgSignup" class="h3 text-center hidden"></div>
+                            </form>
+                        </div>
+                    </div>-->
+                    <div class="row social">
+                        <div class="col-md-12">
+                            <ul class="social-links"> <!-- Social Media Icons -->
+                                <!--<li><a href="#"><i class="fab fa-facebook-f fa-lg icon-social"></i></a></li>-->
+                                <li><a href="https://twitter.com/RossGameDev"><i class="fab fa-twitter  fa-lg icon-social"></i></a></li>
+                                <li><a href="https://www.instagram.com/rossgamedev/"><i class="fab fa-instagram fa-lg icon-social"></i></a>
+                                <li><a href="https://www.youtube.com/watch?v=PMcVtEmvfsU"><i class="fab fa-youtube fa-lg icon-social"></i></a>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-      </section>
-
-      <footer id="sticky-footer" class="py-4 pt-5 pt-5 text-black-50 section1">
-
-        <!-- Twitter -->
-    <a style="color: #55acee" href="https://twitter.com/CairnCurse" role="button2"
-      ><i class="fab fa-twitter fa-3x px-2"></i
-    ></a>
-        <!-- Steam -->
-    <a style="color: #171a21" href="https://store.steampowered.com/app/1302530/Cairn_Mathairs_Curse/" role="button2"
-      ><i class="fab fa-steam fa-3x px-2"></i></a>
-
-      <!-- Email -->
-      <a style="color: #FFFFFF" href="mailto:dev@cairngame.com" role="button2">
-      <i class="far fa-envelope fa-3x px-2"></i></a>
-
-      <!-- Tiktok -->
-      <a href="https://www.tiktok.com/@cairndev" role="button2">
-      <i class="fab fa-tiktok fa-3x px-2"></i></a>
-
-
-
-
+    <!-- /// FOOTER /// -->
+    <div id="footer">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-12">
+                    <!--<div class="row brands">
+                        <div class="col-md-4">
+                            <a href="#">
+                                <img src="images/brand1.png" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="#">
+                                <img src="images/brand2.png" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="#">
+                                <img src="images/brand3.png" class="img-fluid">
+                            </a>
+                        </div>
+                    </div>-->
+                    <!--<ul>
+                        <li><a href="privacy_policy.html">Privacy &amp; Cookie Policy</a></li>
+                        <li><a href="terms_and_conditions.html">Terms &amp; Conditions</a></li>
+                    </ul>-->
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-12">
+                    <p id="copyright">&copy; ARSNL <span id="year"> </span> - Game Landing Page by <a href="#">Atypicalthemes</a></p><!-- Copyright Text -->
+                </div>
+            </div>
+        </div>
     </div>
-          <br><br><br><small>Copyright &copy; Ross McRitchie 2020</small>
-        </div>
-      </footer>
-
-
-    </body>
-
-    </html>
+    
+    <!-- //// SCRIPTS //// -->
+    <script src="js/jquery-3.4.0.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/blazy.min.js"></script>
+    <script src="js/jquery-modal-video.min.js"></script>
+    <script src="js/lightbox.min.js"></script>
+    <script src="js/validator.min.js"></script>
+    <script src="js/arsnl.js"></script>
+</body>
+</html>
